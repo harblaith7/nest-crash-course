@@ -11,7 +11,7 @@ export class RestaurantsController {
         return restaurants
     }
 
-    // @Get('/:id')
+    // @Get('/:id') 
     // findRestaurantsById(@Req() req: Request): Restaurant {
     //     const { params } from req;
     //     return restaurants[0]
@@ -58,7 +58,7 @@ export class RestaurantsController {
         @Body() restaurantBodyDto: RestaurantBodyDto
     ): Restaurant {
         let updatedRestaurant;
-        
+
         const updatedRestaurantsList = restaurants.map(restaurant => {
             if(restaurant.id === id) {
                 updatedRestaurant = {
