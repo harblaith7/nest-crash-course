@@ -12,11 +12,11 @@ export class StudentController {
         return this.studentService.getStudents()
     }
 
-    @Get('/:id')
+    @Get('/:studentId')
     getStudentById(
-        @Param('id') id: string
+        @Param('studentId') studentId: string
     ): FindStudentsResponseDto {
-        return this.studentService.getStudentById(id)
+        return this.studentService.getStudentById(studentId)
     }
 
     @Post()
@@ -26,15 +26,16 @@ export class StudentController {
         return this.studentService.createStudent(body);
     }
 
-    @Put('/:id')
+    @Put('/:studentId')
     updateStudent(
-        @Param('id') id: string,
+        @Param('studentId') studentId: string,
         @Body() body: UpdateStudentDto
     ): StudentResponseDto {
         return this.studentService.updateStudent(
             body,
-            id
+            studentId
         )
     }
-
 }
+
+
