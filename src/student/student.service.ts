@@ -46,4 +46,10 @@ export class StudentService {
         return updatedStudent
     }
 
+    getStudentsByTeacherId(teacherId: string) {
+        return this.students.filter(student => {
+            return student.teacher === teacherId
+        })
+    }
+
 }

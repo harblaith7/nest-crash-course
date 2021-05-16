@@ -7,9 +7,9 @@ export class StudentController {
 
     @Get()
     getStudents(
-
+        @Param('teacherId') teacherId: string 
     ) {
-       
+       return this.studentService.getStudentsByTeacherId(teacherId)
     }
 
     @Put('/:studentId')
