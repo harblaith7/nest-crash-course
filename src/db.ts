@@ -1,26 +1,38 @@
-export let restaurants = [
+export let students = [
     {
-        id: "2973b1b4-72e5-457c-a8f9-010f25d6c27c",
-        name: "McDonalds",
-        rating: 3.9
+        id: "1c25025e-b656-11eb-8529-0242ac130003",
+        name: "Anthony Cole",
+        teacher: "9c9324e8-b656-11eb-8529-0242ac130003"
     },
     {
-        id: "067a906c-7949-4e3d-912f-e64528f01131",
-        name: "Burger King",
-        rating: 2.6
+        id: "1c2504f2-b656-11eb-8529-0242ac130003",
+        name: "Micheal Bryant",
+        teacher: "9c9324e8-b656-11eb-8529-0242ac130003"
     },
     {
-        id: "c74924e8-ef42-4826-b29b-7d454fd38bb8",
-        name: "Popeyes",
-        rating: 4.8
+        id: "1c2505d8-b656-11eb-8529-0242ac130003",
+        name: "Kobe Jordan",
+        teacher: "9c9324e8-b656-11eb-8529-0242ac130003"
     },
     {
-        id: "e0dc53e1-2417-454b-add4-7a09ed68f3e3",
-        name: "Taco Bell",
-        rating: 3.4
+        id: "1c250696-b656-11eb-8529-0242ac130003",
+        name: "Laith Harb",
+        teacher: "9c932736-b656-11eb-8529-0242ac130003"
+    },
+    {
+        id: "1c250754-b656-11eb-8529-0242ac130003",
+        name: "Kendrick Jenner",
+        teacher: "9c932736-b656-11eb-8529-0242ac130003"
     }
 ]
 
-export const updateRestaurantsList = (updatedRestaurantsList) => {
-    restaurants = updatedRestaurantsList
-}
+export let teachers = [
+    {
+        id: "9c9324e8-b656-11eb-8529-0242ac130003",
+        name: "Ms Jackson"
+    },
+    {
+        id: "1c250754-b656-11eb-8529-0242ac130003",
+        name: "Mr Wade"
+    }
+]
