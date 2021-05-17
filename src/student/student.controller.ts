@@ -1,6 +1,6 @@
 import { Controller, Get, Post, Put } from '@nestjs/common';
 
-@Controller('student')
+@Controller('students')
 export class StudentController {
     @Get()
     getStudent() {
