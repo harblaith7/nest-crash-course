@@ -8,7 +8,10 @@ export class StudentController {
     }
 
     @Get('/:studentId')
-    getStudentById() {
+    getStudentById(
+        // @Req() req: Request
+    ) {
+        // return req;
         return "Get Student By Id"
     }
 
